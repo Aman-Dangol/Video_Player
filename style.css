@@ -1,0 +1,9 @@
+div * {
+    margin: 2px;
+}
+
+video{
+    background-color: black;
+    margin-top: 8px;
+    margin-left: 25%;
+}
