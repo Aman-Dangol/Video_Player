@@ -16,3 +16,15 @@
        url = URL.createObjectURL(selectedFile);
     }
     }
+
+    function pause(){
+        if (!videoPlayer.paused) {
+            videoPlayer.pause();
+        }
+    }
+
+    function unpause(){
+        if (videoPlayer.paused) {
+            videoPlayer.play()
+        }
+    }

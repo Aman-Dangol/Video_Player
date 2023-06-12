@@ -10,9 +10,13 @@
   
   <input type="file" id="file"><br>
   <button id="play" onclick="play()">play the video</button><br>
-  <video width="400px" height="300px" id="videoPlayer" controls>
+  <video width="400px" height="300px" id="videoPlayer" autoplay>
   </video>
-  </div>>
+  </div>
+  <div class="b">
+    <button onclick="unpause()"> play</button>
+    <button onclick="pause()">pause</button>
+  </div>
   
 <script src="play_Video.js" ></script>
 </body>
