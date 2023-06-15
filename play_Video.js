@@ -2,27 +2,23 @@
     var file = document.getElementById('file');
     var videoPlayer = document.getElementById('videoPlayer');
     var url="";
-    file.addEventListener('change',  function(event){
-        getUrl(event);
-    });
 
     function play(){
+        getUrl();
         videoPlayer.src=url;
 
     }
-    function getUrl(event){
+    function getUrl(){
         {
-      var selectedFile = event.target.files[0];
-       url = URL.createObjectURL(selectedFile);
-    }
-    }
+            url=URL.createObjectURL(file.files[0]);
+    }}
 
     function pause(){
         if (!videoPlayer.paused) {
             videoPlayer.pause();
         }
     }
-
+    
     function unpause(){
         if (videoPlayer.paused) {
             videoPlayer.play()
